@@ -1,9 +1,6 @@
 CREATE TABLE product(
-"id" BIGINT,
+"id" BIGINT GENERATED ALWAYS AS IDENTITY,
 "name" VARCHAR(200),
-"description" TEXT,
 "price" DOUBLE PRECISION,
-"type" VARCHAR(30),
-"amount" INT,
-"date" DATE
+"type" VARCHAR(30)
 );
